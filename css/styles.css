@@ -1,0 +1,46 @@
+img {
+  position: relative;
+}
+
+body {
+  margin: 0;
+
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+.frente {
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  text-align: end;
+}
+.circulos {
+  height: 30px;
+  margin-top: 7px;
+}
+.circulo_1 {
+  margin-left: 35%;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+.circulo_2 {
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+.circulo_3 {
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+
+.screen {
+  margin: 8%;
+  margin-top: 33%;
+  height: 200px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}

@@ -1,10 +1,11 @@
 img {
   position: relative;
+  width: 100%;
+  top: 0;
 }
 
 body {
   margin: 0;
-
   height: 100%;
 }
 html {
@@ -12,35 +13,107 @@ html {
 }
 .frente {
   width: 100%;
+  height: 522px;
   padding: 5px;
   position: absolute;
   top: 10px;
   text-align: end;
 }
-.circulos {
+.circulos-xs {
   height: 30px;
-  margin-top: 7px;
 }
 .circulo_1 {
-  margin-left: 35%;
-  margin-right: 10px;
+  position: relative;
   border-radius: 50%;
-  background-color: blueviolet;
+  width: auto;
+  height: auto;
+  padding-top: 100%;
+  background: #e72158;
+  margin-left: 20%;
+  box-shadow: 0px 0px 0px 2px #462256;
 }
 .circulo_2 {
-  margin-right: 10px;
+  position: relative;
   border-radius: 50%;
-  background-color: blueviolet;
+  width: auto;
+  height: auto;
+  padding-top: 100%;
+  background: #f4ea63;
+  margin-left: 20%;
+  box-shadow: 0px 0px 0px 2px #462256;
 }
 .circulo_3 {
+  position: relative;
   border-radius: 50%;
-  background-color: blueviolet;
+  width: auto;
+  height: auto;
+  padding-top: 100%;
+  background: #6cb53c;
+  margin-left: 20%;
+  box-shadow: 0px 0px 0px 2px #462256;
 }
 
+.container_screen {
+  margin-top: 8%;
+  height: 20vh;
+}
 .screen {
-  margin: 8%;
-  margin-top: 33%;
-  height: 200px;
-  border-radius: 20px;
-  background-color: aliceblue;
+  object-fit: contain;
+  max-height: 20vh;
+  background-color: azure;
+  border-right: 10px solid;
+  border-bottom: 5px solid;
+  border-color: #462256;
+  border-radius: 10px;
+}
+
+.button_a {
+  background-color: #2fa4dd;
+  text-decoration: none;
+  box-shadow: 2px 1px 0px 0px #462256;
+  border: 0;
+  width: 20%;
+  height: 30%;
+  border-radius: 50%;
+  margin-left: 14%;
+}
+
+.button_b {
+  text-decoration: none;
+  background-color: #6cb53c;
+  box-shadow: 2px 1px 0px 0px #462256;
+
+  height: 15%;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.button_c {
+  background-color: #f18c57;
+  box-shadow: 2px 1px 0px 0px #462256;
+
+  height: 15%;
+  width: 30%;
+  margin-top: 20%;
+  border-radius: 15px;
+}
+.button_d {
+  background-color: #f4ea63;
+  margin-top: 10%;
+  height: 25%;
+  width: 60%;
+  border-radius: 15px;
+}
+.cuadrado_a {
+  border-color: black;
+  border: 5px solid;
+  background-color: black;
+  width: 8vw;
+  height: 8vw;
+}
+.down img {
+  transform: scaleY(-1);
+}
+.left img {
+  transform: scaleX(-1);
 }

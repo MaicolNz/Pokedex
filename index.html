@@ -10,22 +10,78 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-lg-6" style="position: relative">
-          <img src="elems/Fondo-izq.svg" />
-          <div class="row frente">
-            <div class="col-xs-12">
-              <div class="row circulos">
-                <div class="col-xs-1 circulo_1"></div>
-                <div class="col-xs-1 circulo_2"></div>
-                <div class="col-xs-1 circulo_3"></div>
+      <div class="col-xs-12 col-lg-6" style="position: relative">
+        <img src="elems/Fondo-izq.svg" />
+        <div class="row frente">
+          <div class="col-xs-12">
+            <!-- Superior layout -->
+            <div class="col-xs-12 row">
+              <div class="col-xs-4" style="padding: 0">
+                <img src="elems/Lente_sup.svg" />
+              </div>
+              <div class="col-xs-8 circulos-xs row">
+                <div class="col-xs-2" style="padding: 0">
+                  <div class="circulo_1"></div>
+                </div>
+                <div class="col-xs-2" style="padding: 0">
+                  <div class="circulo_2"></div>
+                </div>
+                <div class="col-xs-2" style="padding: 0">
+                  <div class="circulo_3"></div>
+                </div>
               </div>
             </div>
-            <div class="col-xs-12"><div class="screen"></div></div>
+            <!-- Screen -->
+            <div class="row">
+              <div class="col-xs-1"></div>
+              <div class="col-xs-10 center-xs container_screen">
+                <img class="screen" id="screen" src="elems/17538.jpg" />
+              </div>
+              <div class="col-xs-1"></div>
+            </div>
+            <!-- Gamepad -->
+            <div class="row" style="margin-top: 5%">
+              <form id="search" class="col-xs-7 center-xs" style="padding: 0">
+                <button
+                  type="submit"
+                  class="button_a"
+                  id="enter"
+                  name="enter"
+                ></button>
+                <button class="button_b"></button>
+                <button class="button_c"></button>
+                <input type="text" class="button_d" id="name" name="name" />
+              </form>
+              <!-- Cruceta -->
+              <div
+                class="row col-xs-5 center-xs"
+                style="padding: 0; margin-top: 10%"
+              >
+                <div class="row col-xs-12 center-xs">
+                  <button class="cuadrado_a up" id="up">
+                    <img src="elems/Sin título-2.png" />
+                  </button>
+                </div>
+                <div class="row col-xs-12 center-xs">
+                  <button class="cuadrado_a left" id="left">
+                    <img src="elems/Sin título-3.png" />
+                  </button>
+                  <button class="cuadrado_a"></button>
+                  <button class="cuadrado_a right" id="right">
+                    <img src="elems/Sin título-3.png" />
+                  </button>
+                </div>
+                <div class="row col-xs-12 center-xs">
+                  <button class="cuadrado_a down" id="down">
+                    <img src="elems/Sin título-2.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-xs-6"></div>
       </div>
     </div>
   </body>
+  <script src="js/init.js"></script>
 </html>

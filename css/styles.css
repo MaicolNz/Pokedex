@@ -13,7 +13,7 @@ html {
 }
 .frente {
   width: 100%;
-  height: 522px;
+  height: 100%;
   padding: 5px;
   position: absolute;
   top: 10px;
@@ -54,28 +54,76 @@ html {
 }
 
 .container_screen {
+  width: 80%;
   margin-top: 8%;
   height: 20vh;
 }
+@media (min-height: 1000px) and (orientation: portrait) {
+  .container_screen {
+    height: 35vh;
+  }
+}
+@media (min-width: 500px) and (orientation: portrait) {
+  .container_screen {
+    height: 35vh;
+  }
+}
+@media (min-width: 1000px) and (orientation: portrait) {
+  .container_screen {
+    height: 45vw;
+  }
+}
+@media (min-width: 1000px) and (orientation: landscape) {
+  .container_screen {
+    height: 45vw;
+  }
+}
+@media (min-width: 1000px) and (min-height: 800px) and (orientation: landscape) {
+  .container_screen {
+    height: 40vh;
+  }
+  .screen {
+    border-right: 1vw solid;
+  }
+}
 .screen {
   object-fit: contain;
-  max-height: 20vh;
+  height: 100%;
   background-color: azure;
-  border-right: 10px solid;
+  border-right: 3vw solid;
   border-bottom: 5px solid;
   border-color: #462256;
   border-radius: 10px;
 }
-
+.screen1 {
+  object-fit: contain;
+  height: 100%;
+  width: 49%;
+  background-color: azure;
+  border-bottom: 5px solid;
+  border-color: #462256;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.screen2 {
+  object-fit: contain;
+  height: 100%;
+  width: 49%;
+  background-color: azure;
+  border-bottom: 5px solid;
+  border-color: #462256;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-right: 25px solid #462256;
+}
 .button_a {
   background-color: #2fa4dd;
   text-decoration: none;
   box-shadow: 2px 1px 0px 0px #462256;
   border: 0;
   width: 20%;
-  height: 30%;
+  height: 50%;
   border-radius: 50%;
-  margin-left: 14%;
 }
 
 .button_b {
@@ -83,8 +131,8 @@ html {
   background-color: #6cb53c;
   box-shadow: 2px 1px 0px 0px #462256;
 
-  height: 15%;
-  width: 30%;
+  height: 20%;
+  width: 25%;
   border-radius: 15px;
 }
 
@@ -92,28 +140,45 @@ html {
   background-color: #f18c57;
   box-shadow: 2px 1px 0px 0px #462256;
 
-  height: 15%;
-  width: 30%;
-  margin-top: 20%;
+  height: 20%;
+  width: 25%;
+  margin-top: 10%;
   border-radius: 15px;
 }
 .button_d {
   background-color: #f4ea63;
   margin-top: 10%;
-  height: 25%;
+  height: 35%;
   width: 60%;
   border-radius: 15px;
 }
 .cuadrado_a {
+  padding: 0;
   border-color: black;
   border: 5px solid;
   background-color: black;
-  width: 8vw;
-  height: 8vw;
+  width: 25%;
+  height: 100%;
 }
 .down img {
   transform: scaleY(-1);
 }
 .left img {
   transform: scaleX(-1);
+}
+.gamepad img {
+  width: 50%;
+}
+.gamepad {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  bottom: 13%;
+}
+.cruceta {
+  padding: 0;
+  padding-right: 2vw;
+}
+.botones {
+  padding: 0 0 0 1vw;
 }

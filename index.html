@@ -32,31 +32,28 @@
               </div>
             </div>
             <!-- Screen -->
-            <div class="row">
-              <div class="col-xs-1"></div>
-              <div class="col-xs-10 center-xs container_screen">
-                <img class="screen" id="screen" src="elems/17538.jpg" />
+            <div class="row center-xs">
+              <div class="container_screen" id="container_screen">
+                <img class="screen" id="screen" src="elems/17538.jpg" /><img
+                  id="screen2"
+                />
               </div>
-              <div class="col-xs-1"></div>
             </div>
             <!-- Gamepad -->
-            <div class="row" style="margin-top: 5%">
-              <form id="search" class="col-xs-7 center-xs" style="padding: 0">
+            <div class="row gamepad">
+              <form id="search" class="col-xs-7 center-xs botones">
                 <button
                   type="submit"
                   class="button_a"
                   id="enter"
                   name="enter"
                 ></button>
-                <button class="button_b"></button>
-                <button class="button_c"></button>
+                <button class="button_b" id="typeA" disabled></button>
+                <button class="button_c" id="typeB" disabled></button>
                 <input type="text" class="button_d" id="name" name="name" />
               </form>
               <!-- Cruceta -->
-              <div
-                class="row col-xs-5 center-xs"
-                style="padding: 0; margin-top: 10%"
-              >
+              <div class="row col-xs-5 center-xs cruceta">
                 <div class="row col-xs-12 center-xs">
                   <button class="cuadrado_a up" id="up">
                     <img src="elems/Sin título-2.png" />
